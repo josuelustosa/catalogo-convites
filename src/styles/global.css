@@ -14,9 +14,12 @@
 
   --font-montserrat: "Montserrat", sans-serif;
 
-  --font-xl: 3rem;
+  --font-xl: 2.375rem;
   --font-lg: 2rem;
   --font-md: 1.5rem;
   --font-sm: 1.125rem;
   --font-base: 1rem;
+  --font-xs: 0.75rem;
+
+  --layout-container: 64rem;
 }

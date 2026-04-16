@@ -2,7 +2,7 @@ body {
   font-family: var(--font-montserrat);
 }
 
-header nav {
+header {
   background-color: var(--bg-color);
   color: var(--text-secondary);
 
@@ -23,10 +23,90 @@ main {
   margin-top: 2rem;
 }
 
+main nav {
+  max-width: var(--layout-container);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 main h2 {
   font-size: var(--font-md);
   color: var(--text-heading);
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.nav-filters {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.4rem 0.875rem;
+  border: 2px solid var(--color-accent);
+  background-color: transparent;
+  color: var(--color-accent);
+  border-radius: 2rem;
+  font-family: var(--font-montserrat);
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--color-accent);
+  color: var(--text-secondary);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background-color: var(--color-accent);
+  color: var(--text-secondary);
+}
+
+.search-input {
+  padding: 0.4rem 0.875rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 2rem;
+  font-family: var(--font-montserrat);
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+  color: var(--text-body);
+  min-width: 200px;
+  transition: all 0.3s ease;
+  background-color: var(--text-secondary);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--bg-color);
+  box-shadow: 0 0 0 3px rgba(35, 104, 255, 0.2);
+  background-color: var(--text-secondary);
+}
+
+.search-input::placeholder {
+  color: var(--text-body);
+  opacity: 0.7;
 }
 
 /* -------------------------------------------------- */
@@ -39,5 +119,38 @@ footer {
 
   p {
     font-size: var(--font-base);
+  }
+}
+
+/* -------------------------------------------------- */
+/* Media Queries - Responsividade */
+
+@media (max-width: 768px) {
+  main nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  main h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-filters {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .filter-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 300px;
   }
 }
