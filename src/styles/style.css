@@ -18,7 +18,6 @@ header {
 /* -------------------------------------------------- */
 
 main {
-  height: 100vh;
   margin-top: 2rem;
 }
 
@@ -109,6 +108,101 @@ main h2 {
 }
 
 /* -------------------------------------------------- */
+/* Listagem de Convites (catálogo) */
+
+.catalog-container {
+  max-width: var(--layout-container);
+  margin: 2rem auto 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-elevated);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.catalog-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  width: 100%;
+  height: 280px;
+  background-color: var(--bg-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-header img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.card-title-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-body h3 {
+  font-size: var(--font-sm);
+  color: var(--text-heading);
+  font-weight: 700;
+  flex: 1;
+}
+
+.card-body .price {
+  font-weight: 700;
+  background-color: var(--bg-color);
+  color: var(--text-secondary);
+  font-size: 14px;
+  white-space: nowrap;
+
+  padding: 0.4rem 0.6rem;
+  border-radius: 2rem;
+}
+
+.card-body .tag {
+  font-size: var(--font-xs);
+  color: var(--color-accent);
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.card-footer {
+  padding: 0 1rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-footer .filter-btn {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+/* -------------------------------------------------- */
+
 footer {
   background-color: var(--color-accent);
   color: var(--text-secondary);
@@ -164,5 +258,9 @@ footer {
     width: 100%;
     max-width: 300px;
     font-size: 0.625rem;
+  }
+
+  .catalog-container {
+    margin: 2rem;
   }
 }
