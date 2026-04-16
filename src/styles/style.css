@@ -1,0 +1,43 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav {
+  background-color: var(--bg-color);
+  color: var(--text-secondary);
+
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+
+  h1 {
+    font-size: var(--font-lg);
+    font-weight: 800;
+  }
+}
+
+/* -------------------------------------------------- */
+
+main {
+  height: 100vh;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+main h2 {
+  font-size: var(--font-md);
+  color: var(--text-heading);
+  margin-bottom: 1rem;
+}
+
+/* -------------------------------------------------- */
+footer {
+  background-color: var(--color-accent);
+  color: var(--text-secondary);
+
+  padding: 2rem 0;
+  text-align: center;
+
+  p {
+    font-size: var(--font-base);
+  }
+}

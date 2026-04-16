@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #002b6e;
+  --color-accent: #2368ff;
+
+  --text-heading: #002b6e;
+  --text-body: #3a3a3a;
+  --text-secondary: #ffffff;
+
+  --font-xl: 3rem;
+  --font-lg: 2rem;
+  --font-md: 1.5rem;
+  --font-sm: 1.125rem;
+  --font-base: 1rem;
+}
