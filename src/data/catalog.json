@@ -1,0 +1,49 @@
+{
+  "types": [
+    { "id": "digital", "label": "Digital", "file": "png" },
+    { "id": "pdf", "label": "Interativo", "file": "pdf" },
+    { "id": "video", "label": "Animado", "file": "mp4" }
+  ],
+  "invitations": [
+    {
+      "id": "ci-minecraft-5-anos",
+      "name": "Convite Interativo Minecraft 5 Anos",
+      "image": "ci-minecraft-5-anos.png",
+      "price": 34.99,
+      "pages": 1,
+      "file": "arquivo.pdf",
+      "typeFile": "pdf",
+      "cover": "capa.webp"
+    },
+    {
+      "id": "ci-moana-15-anos",
+      "name": "Convite Interativo Moana 15 Anos",
+      "image": "ci-moana-15-anos.png",
+      "price": 34.99,
+      "pages": 1,
+      "file": "arquivo.pdf",
+      "typeFile": "pdf",
+      "cover": "capa.webp"
+    },
+    {
+      "id": "cd-ursinhos-carinhosos-1-ano",
+      "name": "Convite Digital Ursinhos Carinhosos 1 Ano",
+      "image": "cd-ursinhos-carinhosos-1-ano.png",
+      "price": 24.99,
+      "pages": 1,
+      "file": "arquivo.png",
+      "typeFile": "png",
+      "cover": "capa.webp"
+    },
+    {
+      "id": "ci-casamento-azul-serenity",
+      "name": "Convite Interativo Casamento Azul Serenity",
+      "image": "ci-casamento-azul-serenity.png",
+      "price": 79.99,
+      "pages": 3,
+      "file": "arquivo.pdf",
+      "typeFile": "pdf",
+      "cover": "capa.webp"
+    }
+  ]
+}
