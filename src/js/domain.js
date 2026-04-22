@@ -40,3 +40,59 @@ export function resolveType(type, typeMap) {
         }
     );
 }
+
+export function createTypeMapping(types = []) {
+    const mapping = {};
+
+    types.forEach((type) => {
+        const label = String(type?.label || "").toLowerCase();
+        const file = String(type?.file || "").toLowerCase();
+        const pluralKey = `${label}s`; // Digital -> digitais, Interativo -> interativos
+
+        mapping[pluralKey] = file;
+    });
+
+    return mapping;
+}
+
+export function generateNavFilters(types = []) {
+    const filters = [
+        {
+            id: 1,
+            title: "Todos",
+            value: "todos"
+        }
+    ];
+
+    types.forEach((type, index) => {
+        const label = String(type?.label || "");
+        const value = `${label.toLowerCase()}s`; // Digital -> digitais
+
+        filters.push({
+            id: index + 2,
+            title: label,
+            value: value
+        });
+    });
+
+    return filters;
+}
+
+export function filterInvitationsByType(invitations, filterType, typeMapping) {
+    const type = String(filterType || "").toLowerCase();
+
+    // Se o filtro é "todos", retorna todas as invitations
+    if (type === "todos") {
+        return invitations;
+    }
+
+    // Caso contrário, filtra pelo tipo de arquivo
+    const targetType = typeMapping[type];
+    if (!targetType) {
+        return invitations;
+    }
+
+    return invitations.filter((invitation) =>
+        String(invitation?.typeFile || "").toLowerCase() === targetType
+    );
+}
