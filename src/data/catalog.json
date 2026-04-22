@@ -1,8 +1,8 @@
 {
   "types": [
-    { "id": "digital", "label": "Digital", "file": "png" },
+    { "id": "png", "label": "Digital", "file": "png" },
     { "id": "pdf", "label": "Interativo", "file": "pdf" },
-    { "id": "video", "label": "Animado", "file": "mp4" }
+    { "id": "mp4", "label": "Animado", "file": "mp4" }
   ],
   "invitations": [
     {
@@ -11,9 +11,8 @@
       "image": "ci-minecraft-5-anos.png",
       "price": 34.99,
       "pages": 1,
-      "file": "arquivo.pdf",
-      "typeFile": "pdf",
-      "cover": "capa.webp"
+      "file": "ci-minecraft-5-anos.pdf",
+      "typeFile": "pdf"
     },
     {
       "id": "ci-moana-15-anos",
@@ -21,9 +20,8 @@
       "image": "ci-moana-15-anos.png",
       "price": 34.99,
       "pages": 1,
-      "file": "arquivo.pdf",
-      "typeFile": "pdf",
-      "cover": "capa.webp"
+      "file": "ci-moana-15-anos.pdf",
+      "typeFile": "pdf"
     },
     {
       "id": "cd-ursinhos-carinhosos-1-ano",
@@ -31,9 +29,8 @@
       "image": "cd-ursinhos-carinhosos-1-ano.png",
       "price": 24.99,
       "pages": 1,
-      "file": "arquivo.png",
-      "typeFile": "png",
-      "cover": "capa.webp"
+      "file": "cd-ursinhos-carinhosos-1-ano.png",
+      "typeFile": "png"
     },
     {
       "id": "ci-casamento-azul-serenity",
@@ -41,9 +38,8 @@
       "image": "ci-casamento-azul-serenity.png",
       "price": 79.99,
       "pages": 3,
-      "file": "arquivo.pdf",
-      "typeFile": "pdf",
-      "cover": "capa.webp"
+      "file": "ci-casamento-azul-serenity.pdf",
+      "typeFile": "pdf"
     }
   ]
 }
